@@ -1,10 +1,10 @@
 # DiceLoadingView
 
-A dice 3D rotation loading view.
+一个骰子3D旋转loading view 
 
-You can specify the number, color and background of the dice on each side of the cube, and you can also specify the duration and interpolator of the animation.
+你可以指定立方体中每一面骰子的点数，颜色和背景，同时也可以指定执行的动画时间和动画插值器
 
-### [中文](https://github.com/samlss/DiceLoadingView/blob/master/README-ZH.md)
+### [更多](https://github.com/samlss/FunnyViews)
 
  <br/>
 
@@ -19,16 +19,16 @@ You can specify the number, color and background of the dice on each side of the
 
 ------
 
-Before we introduce DiceLoadingView, let's take a look at the composition of each dice in the cube.
+在开始介绍DiceLoadingView之前，先看一些骰子即DeiceView的组成
 
 ## DiceView
-This is a **DiceView**  that use in the DiceLoadingView.
+在DiceLoadingView中应用的一个骰子view
 
-The following is the effect chart:<br>
-![DiceView](https://github.com/samlss/DiceLoadingView/blob/master/screenshots/screenshot4.png)
+以下为效果图：
+![DiceView](https://github.com/samlss/DiceLoadingView/blob/master/screenshots/screenshot4.gif)
 
-### Use<br>
-in layout.xml：
+### 使用<br>
+布局中：
 
 ```
 <com.iigo.library.DiceView
@@ -41,31 +41,32 @@ in layout.xml：
             android:layout_height="50dp" />
 ```
 
-in java code：
+代码：
 
 ```
-diceView.setNumber(2); //set the dice number, must be 1-6
-diceView.setPointColor(Color.RED); //set the point color
-diceView.setBgColor(Color.RED); //set the bg color
-diceView.setBorderColor(Color.RED); //set the border color
+diceView.setNumber(2); //设置骰子点数，必须为1-6
+diceView.setPointColor(Color.RED); //设置点的颜色
+diceView.setBgColor(Color.RED); //设置背景颜色
+diceView.setBorderColor(Color.RED); //设置边界颜色
 ```
 
-Attributes description：
+属性说明：
 
-Before describe the attributes, let's look at a attributes pitures firstly.
+开始描述效果图之前，先看一张说明图：
 
 ![picture](https://github.com/samlss/DiceLoadingView/blob/master/screenshots/description2.png)
 
 | attr            |         description         |
 | --------------- | :-------------------------: |
-| number | the dice number, one(1), two(2), three(3), four(4), five(5), six(6) |
-| pointColor  | the point color |
-| bgColor  | set the bg color |
-| borderColor | set the border color |
+| number | 骰子点数 one(1), two(2), three(3), four(4), five(5), six(6) |
+| pointColor  | 点的颜色 |
+| bgColor  | 背景颜色 |
+| borderColor | 边界颜色 |
 
 ## DiceLoadingView
 ### Use<br>
-Add it in your root build.gradle at the end of repositories：
+在根目录的build.gradle添加这一句代码： 
+
 ```
 allprojects {
     repositories {
@@ -75,7 +76,8 @@ allprojects {
 }
 ```
 
-Add it in your app build.gradle at the end of repositories:
+在app目录下的build.gradle添加依赖使用： 
+
 ```
 dependencies {
     implementation 'com.github.samlss:DiceLoadingView:1.0'
@@ -83,7 +85,8 @@ dependencies {
 ```
 
 
-in layout.xml：
+布局中使用： 
+
 ```
  <com.iigo.library.DiceLoadingView
                     android:id="@+id/dlv_loading1"
@@ -112,76 +115,78 @@ in layout.xml：
 
 <br>
 
-in java code：
+代码中使用： 
+
 ```java
-diceLoadingView1.start(); //start animation
-diceLoadingView1.stop(); //stop animation
-diceLoadingView1.pause(); //pause animation
-diceLoadingView1.resume(); //resume animation
+diceLoadingView.start(); //开始动画
+diceLoadingView.stop(); //停止动画
+diceLoadingView.pause(); //暂停动画
+diceLoadingView.resume(); //恢复动画
+diceLoadingView.release(); //不需要使用该loading view的时候可手动释放，例如在activity的ondestroy()中
 
-diceLoadingView.setDuration(3000); //set the animation 's duration
-diceLoadingView.setInterpolator(new AnticipateOvershootInterpolator()); //set the animation's interpolator
-diceLoadingView.setFirstSideDiceNumber(2); //set the dice number{1-6} of the first dice side
-diceLoadingView.setFirstSidePointColor(Color.parseColor("#FF7D81")); //set the point color of the first dice side
-diceLoadingView.setFirstSideDiceBgColor(Color.WHITE); // set the bg color of the first dice side
-diceLoadingView.setFirstSideDiceBorderColor(Color.GRAY); //set the border color of the first dice side
+diceLoadingView.setDuration(3000); //设置动画时间
+diceLoadingView.setInterpolator(new AnticipateOvershootInterpolator()); //设置动画插值器
+diceLoadingView.setFirstSideDiceNumber(2); //设置第一面骰子点数(1-6)
+diceLoadingView.setFirstSidePointColor(Color.parseColor("#FF7D81")); //设置第一面骰子点的颜色
+diceLoadingView.setFirstSideDiceBgColor(Color.WHITE); //设置第一面骰子背景颜色
+diceLoadingView.setFirstSideDiceBorderColor(Color.GRAY); //设置第一面骰子边界颜色
 
-diceLoadingView.setSecondSideDiceNumber(3); //set the dice number{1-6} of the second dice side
-diceLoadingView.setSecondSidePointColor(Color.BLUE);//set the point color of the second dice side
-diceLoadingView.setSecondSideDiceBgColor(Color.WHITE); //set the bg color of the second dice side
-diceLoadingView.setSecondSideDiceBorderColor(Color.BLUE); //set the border color of the second dice side
+diceLoadingView.setSecondSideDiceNumber(3); //设置第二面骰子点数(1-6)
+diceLoadingView.setSecondSidePointColor(Color.BLUE); //设置第二面骰子点的颜色
+diceLoadingView.setSecondSideDiceBgColor(Color.WHITE); //设置第二面骰子背景颜色
+diceLoadingView.setSecondSideDiceBorderColor(Color.BLUE); //设置第二面骰子边界颜色
 
-diceLoadingView.setThirdSideDiceNumber(4); //set the dice number{1-6} of the third dice side
-diceLoadingView.setThirdSidePointColor(Color.GREEN);//set the point color of the third dice side
-diceLoadingView.setThirdSideDiceBgColor(Color.WHITE); //set the bg color of the third dice side
-diceLoadingView.setThirdSideDiceBorderColor(Color.GREEN); //set the border color of the third dice side
+diceLoadingView.setThirdSideDiceNumber(4); //设置第三面骰子点数(1-6)
+diceLoadingView.setThirdSidePointColor(Color.GREEN); //设置第三面骰子点的颜色
+diceLoadingView.setThirdSideDiceBgColor(Color.WHITE); //设置第三面骰子背景颜色
+diceLoadingView.setThirdSideDiceBorderColor(Color.GREEN); //设置第三面骰子边界颜色
 
-diceLoadingView.setFourthSideDiceNumber(5); //set the dice number{1-6} of the fourth dice side
-diceLoadingView.setFourthSidePointColor(Color.RED);//set the point color of the fourth dice side
-diceLoadingView.setFourthSideDiceBgColor(Color.WHITE);//set the bg color of the fourth dice side
-diceLoadingView.setFourthSideDiceBorderColor(Color.RED);//set the border color of the fourth dice side
+diceLoadingView.setFourthSideDiceNumber(5); //设置第四面骰子点数(1-6)
+diceLoadingView.setFourthSidePointColor(Color.RED); //设置第四面骰子点的颜色
+diceLoadingView.setFourthSideDiceBgColor(Color.WHITE); //设置第四面骰子背景颜色
+diceLoadingView.setFourthSideDiceBorderColor(Color.RED); //设置第四面骰子边界颜色
 ```
 <br>
 
 
-Attributes description：
+属性说明：
 
-Before describe the attributes, let's look at a attributes pitures firstly.
+开始描述效果图之前，先看两张张说明图：
 
-For the cube:
+针对立方体而言
 
 ![picture](https://github.com/samlss/DiceLoadingView/blob/master/screenshots/description1.png)
 
-For the each side:
+针对每一个骰子面而言:
 
 ![picture](https://github.com/samlss/DiceLoadingView/blob/master/screenshots/description2.png)
 
 
 | attr            |         description         |
 | --------------- | :-------------------------: |
-| animDuration  | the animation 's duration |
-| animInterpolator | the animation's interpolator |
-| firstSideDiceNumber  | the dice number{1-6} of the first dice side |
-| firstSideDicePointColor | the point color of the first dice side |
-| firstSideDiceBgColor  | the bg color of the first dice side |
-| firstSideDiceBorderColor | the border color of the first dice side |
-| secondSideDiceNumber  | the dice number{1-6} of the second dice side |
-| secondSideDicePointColor | the point color of the second dice side |
-| secondSideDiceBgColor  | the bg color of the second dice side |
-| secondSideDiceBorderColor | the border color of the second dice side |
-| thirdSideDiceNumber  | the dice number{1-6} of the third dice side |
-| thirdSideDicePointColor | the point color of the third dice side |
-| thirdSideDiceBgColor  | the bg color of the third dice side |
-| thirdSideDiceBorderColor | the border color of the third dice side |
-| fourthSideDiceNumber  | the dice number{1-6} of the fourth dice side |
-| fourthSideDicePointColor | the point color of the fourth dice side |
-| fourthSideDiceBgColor  | the bg color of the fourth dice side |
-| fourthSideDiceBorderColor | the border color of the fourth dice side |
+| animDuration  | 动画时间 |
+| animInterpolator | 动画加速器 |
+| firstSideDiceNumber  | 第一面骰子点数(1-6) |
+| firstSideDicePointColor | 第一面骰子点的颜色 |
+| firstSideDiceBgColor  | 第一面骰子背景颜色 |
+| firstSideDiceBorderColor | 第一面骰子边界颜色 |
+| secondSideDiceNumber  | 第二面骰子点数(1-6) |
+| secondSideDicePointColor | 第二面骰子点的颜色 |
+| secondSideDiceBgColor  | 第二面骰子背景颜色 |
+| secondSideDiceBorderColor | 第二面骰子边界颜色 |
+| thirdSideDiceNumber  | 第三面骰子点数(1-6) |
+| thirdSideDicePointColor | 第三面骰子点的颜色 |
+| thirdSideDiceBgColor  | 第三面骰子背景颜色 |
+| thirdSideDiceBorderColor | 第三面骰子边界颜色 |
+| fourthSideDiceNumber  | 第四面骰子点数(1-6) |
+| fourthSideDicePointColor | 第四面骰子点的颜色 |
+| fourthSideDiceBgColor  | 第四面骰子背景颜色 |
+| fourthSideDiceBorderColor | 第四面骰子边界颜色 |
 
 <br>
 
-### Note
-In order to show better effect, you should specify that the DiceLoadingView's width and height are equal.
+### 注意
+为了更好的显示效果，请设置DiceLoadingView的宽高为相等的
 
 
 ## [LICENSE](https://github.com/samlss/DiceLoadingView/blob/master/LICENSE)
