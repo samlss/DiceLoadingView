@@ -6,6 +6,8 @@ You can specify the number, color and background of the dice on each side of the
 
 ### [中文](https://github.com/samlss/DiceLoadingView/blob/master/README-ZH.md)
 
+### [More](https://github.com/samlss/FunnyViews)
+
  <br/>
 
 [![Api reqeust](https://img.shields.io/badge/api-11+-green.svg)](https://github.com/samlss/DiceLoadingView)  [![MIT Licence](https://badges.frapsoft.com/os/mit/mit.svg?v=103)](https://github.com/samlss/DiceLoadingView/blob/master/LICENSE) [![Blog](https://img.shields.io/badge/samlss-blog-orange.svg)](https://blog.csdn.net/Samlss)
