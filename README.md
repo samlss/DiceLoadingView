@@ -6,6 +6,8 @@ You can specify the number, color and background of the dice on each side of the
 
 ### [中文](https://github.com/samlss/DiceLoadingView/blob/master/README-ZH.md)
 
+### [More](https://github.com/samlss/FunnyViews)
+
  <br/>
 
 [![Api reqeust](https://img.shields.io/badge/api-11+-green.svg)](https://github.com/samlss/DiceLoadingView)  [![MIT Licence](https://badges.frapsoft.com/os/mit/mit.svg?v=103)](https://github.com/samlss/DiceLoadingView/blob/master/LICENSE) [![Blog](https://img.shields.io/badge/samlss-blog-orange.svg)](https://blog.csdn.net/Samlss)
@@ -114,10 +116,11 @@ in layout.xml：
 
 in java code：
 ```java
-diceLoadingView1.start(); //start animation
-diceLoadingView1.stop(); //stop animation
-diceLoadingView1.pause(); //pause animation
-diceLoadingView1.resume(); //resume animation
+diceLoadingView.start(); //start animation
+diceLoadingView.stop(); //stop animation
+diceLoadingView.pause(); //pause animation
+diceLoadingView.resume(); //resume animation
+cubeLoadingView.release(); //Can 'released' when you don't need to use the loading view, for example in the activity's onDestroy()
 
 diceLoadingView.setDuration(3000); //set the animation 's duration
 diceLoadingView.setInterpolator(new AnticipateOvershootInterpolator()); //set the animation's interpolator
