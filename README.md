@@ -114,10 +114,11 @@ in layout.xml：
 
 in java code：
 ```java
-diceLoadingView1.start(); //start animation
-diceLoadingView1.stop(); //stop animation
-diceLoadingView1.pause(); //pause animation
-diceLoadingView1.resume(); //resume animation
+diceLoadingView.start(); //start animation
+diceLoadingView.stop(); //stop animation
+diceLoadingView.pause(); //pause animation
+diceLoadingView.resume(); //resume animation
+cubeLoadingView.release(); //Can 'released' when you don't need to use the loading view, for example in the activity's onDestroy()
 
 diceLoadingView.setDuration(3000); //set the animation 's duration
 diceLoadingView.setInterpolator(new AnticipateOvershootInterpolator()); //set the animation's interpolator
