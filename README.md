@@ -120,7 +120,7 @@ diceLoadingView.start(); //start animation
 diceLoadingView.stop(); //stop animation
 diceLoadingView.pause(); //pause animation
 diceLoadingView.resume(); //resume animation
-cubeLoadingView.release(); //Can 'released' when you don't need to use the loading view, for example in the activity's onDestroy()
+diceLoadingView.release(); //Can 'released' when you don't need to use the loading view, for example in the activity's onDestroy()
 
 diceLoadingView.setDuration(3000); //set the animation 's duration
 diceLoadingView.setInterpolator(new AnticipateOvershootInterpolator()); //set the animation's interpolator
