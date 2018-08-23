@@ -152,7 +152,7 @@ For the cube:
 
 ![picture](https://github.com/samlss/DiceLoadingView/blob/master/screenshots/description1.png)
 
-For the each size:
+For the each side:
 
 ![picture](https://github.com/samlss/DiceLoadingView/blob/master/screenshots/description2.png)
 
