@@ -21,6 +21,25 @@ You can specify the number, color and background of the dice on each side of the
 
 ------
 
+## Use<br>
+Add it in your root build.gradle at the end of repositories：
+```
+allprojects {
+    repositories {
+        //...
+        maven { url 'https://jitpack.io' }
+    }
+}
+```
+
+Add it in your app build.gradle at the end of repositories:
+```
+dependencies {
+    implementation 'com.github.samlss:DiceLoadingView:1.0'
+}
+```
+------
+
 Before we introduce DiceLoadingView, let's take a look at the composition of each dice in the cube.
 
 ## DiceView
@@ -66,25 +85,6 @@ Before describe the attributes, let's look at a attributes pitures firstly.
 | borderColor | set the border color |
 
 ## DiceLoadingView
-### Use<br>
-Add it in your root build.gradle at the end of repositories：
-```
-allprojects {
-    repositories {
-        //...
-        maven { url 'https://jitpack.io' }
-    }
-}
-```
-
-Add it in your app build.gradle at the end of repositories:
-```
-dependencies {
-    implementation 'com.github.samlss:DiceLoadingView:1.0'
-}
-```
-
-
 in layout.xml：
 ```
  <com.iigo.library.DiceLoadingView
