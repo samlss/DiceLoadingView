@@ -19,6 +19,28 @@
 
 ------
 
+### 使用<br>
+在根目录的build.gradle添加这一句代码： 
+
+```
+allprojects {
+    repositories {
+        //...
+        maven { url 'https://jitpack.io' }
+    }
+}
+```
+
+在app目录下的build.gradle添加依赖使用： 
+
+```
+dependencies {
+    implementation 'com.github.samlss:DiceLoadingView:1.0'
+}
+
+```
+------
+
 在开始介绍DiceLoadingView之前，先看一些骰子即DeiceView的组成
 
 ## DiceView
@@ -64,26 +86,7 @@ diceView.setBorderColor(Color.RED); //设置边界颜色
 | borderColor | 边界颜色 |
 
 ## DiceLoadingView
-### Use<br>
-在根目录的build.gradle添加这一句代码： 
-
-```
-allprojects {
-    repositories {
-        //...
-        maven { url 'https://jitpack.io' }
-    }
-}
-```
-
-在app目录下的build.gradle添加依赖使用： 
-
-```
-dependencies {
-    implementation 'com.github.samlss:DiceLoadingView:1.0'
-}
-```
-
+### 使用<br>
 
 布局中使用： 
 
