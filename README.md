@@ -24,8 +24,8 @@ Before we introduce DiceLoadingView, let's take a look at the composition of eac
 ## DiceView
 This is a **DiceView**  that use in the DiceLoadingView.
 
-The following is the effect chart:
-![DiceView](https://github.com/samlss/DiceLoadingView/blob/master/screenshots/screenshot4.gif)
+The following is the effect chart:<br>
+![DiceView](https://github.com/samlss/DiceLoadingView/blob/master/screenshots/screenshot4.png)
 
 ### Use<br>
 in layout.xml：
