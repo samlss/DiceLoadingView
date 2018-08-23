@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="DiceLoadingView">
+        <attr name="animDuration" format="integer"></attr>
+        <attr name="animInterpolator" >
+            <flag name = "AccelerateDecelerateInterpolator" value = "0" />
+            <flag name = "AccelerateInterpolator" value = "1" />
+            <flag name = "DecelerateInterpolator" value = "2" />
+            <flag name = "BounceInterpolator" value = "3" />
+            <flag name = "CycleInterpolator" value = "4" />
+            <flag name = "LinearInterpolator" value = "5" />
+            <flag name = "AnticipateOvershootInterpolator" value = "6" />
+            <flag name = "AnticipateInterpolator" value = "7" />
+            <flag name = "OvershootInterpolator" value = "8" />
+        </attr>
+        <attr name="firstSideDiceNumber" format="integer"></attr>
+        <attr name="firstSideDicePointColor" format="color|reference"></attr>
+        <attr name="firstSideDiceBgColor" format="color|reference"></attr>
+        <attr name="firstSideDiceBorderColor" format="color|reference"></attr>
+        <attr name="secondSideDiceNumber" format="integer"></attr>
+        <attr name="secondSideDicePointColor" format="color|reference"></attr>
+        <attr name="secondSideDiceBgColor" format="color|reference"></attr>
+        <attr name="secondSideDiceBorderColor" format="color|reference"></attr>
+        <attr name="thirdSideDiceNumber" format="integer"></attr>
+        <attr name="thirdSideDicePointColor" format="color|reference"></attr>
+        <attr name="thirdSideDiceBgColor" format="color|reference"></attr>
+        <attr name="thirdSideDiceBorderColor" format="color|reference"></attr>
+        <attr name="fourthSideDiceNumber" format="integer"></attr>
+        <attr name="fourthSideDicePointColor" format="color|reference"></attr>
+        <attr name="fourthSideDiceBgColor" format="color|reference"></attr>
+        <attr name="fourthSideDiceBorderColor" format="color|reference"></attr>
+    </declare-styleable>
+
+    <declare-styleable name="DiceView">
+        <attr name="pointColor" format="color|reference"></attr>
+        <attr name="borderColor" format="color|reference"></attr>
+        <attr name="bgColor" format="color|reference"></attr>
+        <attr name="number" >
+            <flag name = "one" value = "1" />
+            <flag name = "two" value = "2" />
+            <flag name = "three" value = "3" />
+            <flag name = "four" value = "4" />
+            <flag name = "five" value = "5" />
+            <flag name = "six" value = "6" />
+        </attr>
+    </declare-styleable>
+</resources>

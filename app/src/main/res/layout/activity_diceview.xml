@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:fillViewport="true"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.iigo.library.DiceView
+            android:layout_marginTop="10dp"
+            app:number="one"
+            app:bgColor="@android:color/white"
+            app:borderColor="@color/colorPrimary"
+            app:pointColor="@color/colorPrimary"
+            android:layout_width="50dp"
+            android:layout_height="50dp" />
+
+        <com.iigo.library.DiceView
+            android:layout_marginTop="10dp"
+            app:number="two"
+            android:layout_width="50dp"
+            android:layout_height="50dp" />
+
+        <com.iigo.library.DiceView
+            android:layout_marginTop="10dp"
+            app:number="three"
+            android:layout_width="50dp"
+            android:layout_height="50dp" />
+
+        <com.iigo.library.DiceView
+            app:number="four"
+            android:layout_marginTop="10dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp" />
+
+        <com.iigo.library.DiceView
+            android:layout_marginTop="10dp"
+            app:number="five"
+            android:layout_width="50dp"
+            android:layout_height="50dp" />
+
+        <com.iigo.library.DiceView
+            android:layout_marginTop="10dp"
+            app:number="six"
+            android:layout_width="50dp"
+            android:layout_height="50dp" />
+
+    </LinearLayout>
+
+</ScrollView>

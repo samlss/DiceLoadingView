@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:textSize="10sp"
+                android:layout_height="wrap_content"
+                android:onClick="onPause"
+                android:text="Pause"
+                android:textAllCaps="false" />
+
+            <Button
+                android:textSize="10sp"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:onClick="onResume"
+                android:text="Resume"
+                android:textAllCaps="false" />
+
+            <Button
+                android:textSize="10sp"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:onClick="onStart"
+                android:text="Start"
+                android:textAllCaps="false" />
+
+            <Button
+                android:textSize="10sp"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:onClick="onStop"
+                android:text="Stop"
+                android:textAllCaps="false" />
+
+            <Button
+                android:textSize="10sp"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:onClick="onStartDiceView"
+                android:text="DiceView"
+                android:textAllCaps="false" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <com.iigo.library.DiceLoadingView
+                    android:id="@+id/dlv_loading1"
+                    app:animDuration="2000"
+                    app:animInterpolator="AccelerateDecelerateInterpolator"
+                    app:firstSideDiceNumber="1"
+                    app:firstSideDicePointColor="@color/colorPrimary"
+                    app:firstSideDiceBgColor="@android:color/white"
+                    app:firstSideDiceBorderColor="@color/colorPrimary"
+                    app:secondSideDiceNumber="2"
+                    app:secondSideDicePointColor="@android:color/holo_orange_dark"
+                    app:secondSideDiceBgColor="@android:color/white"
+                    app:secondSideDiceBorderColor="@android:color/holo_orange_dark"
+                    app:thirdSideDiceNumber="3"
+                    app:thirdSideDicePointColor="@android:color/holo_red_dark"
+                    app:thirdSideDiceBgColor="@android:color/white"
+                    app:thirdSideDiceBorderColor="@android:color/holo_red_dark"
+                    app:fourthSideDiceNumber="4"
+                    app:fourthSideDiceBgColor="@android:color/white"
+                    app:fourthSideDiceBorderColor="@android:color/holo_green_dark"
+                    app:fourthSideDicePointColor="@android:color/holo_green_dark"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:text="AccelerateDecelerateInterpolator"
+                    android:textColor="#545453"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <com.iigo.library.DiceLoadingView
+                    android:id="@+id/dlv_loading2"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    app:animInterpolator="AccelerateInterpolator" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:text="AccelerateInterpolator"
+                    android:gravity="center"
+                    android:textColor="#545453"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <com.iigo.library.DiceLoadingView
+                    android:id="@+id/dlv_loading3"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    app:firstSideDicePointColor="#FF7D81"
+                    app:animInterpolator="DecelerateInterpolator" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:text="DecelerateInterpolator"
+                    android:gravity="center"
+                    android:textColor="#545453"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <com.iigo.library.DiceLoadingView
+                    android:id="@+id/dlv_loading4"
+                    android:layout_width="50dp"
+                    app:firstSideDicePointColor="#FF7D81"
+                    android:layout_height="50dp"
+                    app:animInterpolator="BounceInterpolator" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="BounceInterpolator"
+                    android:gravity="center"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:textColor="#545453"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <com.iigo.library.DiceLoadingView
+                    android:id="@+id/dlv_loading5"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    app:firstSideDicePointColor="#FF7D81"
+                    app:animInterpolator="CycleInterpolator" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:text="CycleInterpolator"
+                    android:gravity="center"
+                    android:textColor="#545453"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <com.iigo.library.DiceLoadingView
+                    android:id="@+id/dlv_loading6"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    app:firstSideDicePointColor="#FF7D81"
+                    app:animInterpolator="LinearInterpolator" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="LinearInterpolator"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:gravity="center"
+                    android:textColor="#545453"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <com.iigo.library.DiceLoadingView
+                    android:id="@+id/dlv_loading7"
+                    android:layout_width="50dp"
+                    app:firstSideDicePointColor="#FF7D81"
+                    android:layout_height="50dp"
+                    app:animInterpolator="AnticipateOvershootInterpolator" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:text="AnticipateOvershootInterpolator"
+                    android:textColor="#545453"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <com.iigo.library.DiceLoadingView
+                    android:id="@+id/dlv_loading8"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    app:firstSideDicePointColor="#FF7D81"
+                    app:animInterpolator="AnticipateInterpolator" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:text="AnticipateInterpolator"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:textColor="#545453"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <com.iigo.library.DiceLoadingView
+                    android:id="@+id/dlv_loading9"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    app:firstSideDicePointColor="#FF7D81"
+                    app:animInterpolator="OvershootInterpolator" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:gravity="center"
+                    android:text="OvershootInterpolator"
+                    android:textColor="#545453"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>
