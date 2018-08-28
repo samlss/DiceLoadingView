@@ -41,10 +41,10 @@ dependencies {
 ```
 ------
 
-在开始介绍DiceLoadingView之前，先看一些骰子即DeiceView的组成
+在开始介绍DiceLoadingView之前，先看一下骰子即DeiceView的组成
 
 ## DiceView
-在DiceLoadingView中应用的一个骰子view
+在DiceLoadingView中应用的骰子view
 
 以下为效果图：
 ![DiceView](https://github.com/samlss/DiceLoadingView/blob/master/screenshots/screenshot4.gif)
