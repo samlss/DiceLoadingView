@@ -47,7 +47,7 @@ dependencies {
 在DiceLoadingView中应用的骰子view
 
 以下为效果图：
-![DiceView](https://github.com/samlss/DiceLoadingView/blob/master/screenshots/screenshot4.gif)
+![DiceView](https://github.com/samlss/DiceLoadingView/blob/master/screenshots/screenshot4.png)
 
 ### 使用<br>
 布局中：
