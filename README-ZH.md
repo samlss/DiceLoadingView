@@ -46,7 +46,7 @@ dependencies {
 ## DiceView
 在DiceLoadingView中应用的骰子view
 
-以下为效果图：
+以下为效果图：<br>
 ![DiceView](https://github.com/samlss/DiceLoadingView/blob/master/screenshots/screenshot4.png)
 
 ### 使用<br>
