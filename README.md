@@ -53,13 +53,13 @@ in layout.xml：
 
 ```
 <com.iigo.library.DiceView
-            android:layout_marginTop="10dp"
-            app:number="one"
-            app:bgColor="@android:color/white"
-            app:borderColor="@color/colorPrimary"
-            app:pointColor="@color/colorPrimary"
-            android:layout_width="50dp"
-            android:layout_height="50dp" />
+    android:layout_marginTop="10dp"
+    app:number="one"
+    app:bgColor="@android:color/white"
+    app:borderColor="@color/colorPrimary"
+    app:pointColor="@color/colorPrimary"
+    android:layout_width="50dp"
+    android:layout_height="50dp" />
 ```
 
 in java code：
@@ -88,27 +88,27 @@ Before describe the attributes, let's look at a attributes pitures firstly.
 in layout.xml：
 ```
  <com.iigo.library.DiceLoadingView
-                    android:id="@+id/dlv_loading1"
-                    app:animDuration="2000"
-                    app:animInterpolator="AccelerateDecelerateInterpolator"
-                    app:firstSideDiceNumber="1"
-                    app:firstSideDicePointColor="@color/colorPrimary"
-                    app:firstSideDiceBgColor="@android:color/white"
-                    app:firstSideDiceBorderColor="@color/colorPrimary"
-                    app:secondSideDiceNumber="2"
-                    app:secondSideDicePointColor="@android:color/holo_orange_dark"
-                    app:secondSideDiceBgColor="@android:color/white"
-                    app:secondSideDiceBorderColor="@android:color/holo_orange_dark"
-                    app:thirdSideDiceNumber="3"
-                    app:thirdSideDicePointColor="@android:color/holo_red_dark"
-                    app:thirdSideDiceBgColor="@android:color/white"
-                    app:thirdSideDiceBorderColor="@android:color/holo_red_dark"
-                    app:fourthSideDiceNumber="4"
-                    app:fourthSideDiceBgColor="@android:color/white"
-                    app:fourthSideDiceBorderColor="@android:color/holo_green_dark"
-                    app:fourthSideDicePointColor="@android:color/holo_green_dark"
-                    android:layout_width="50dp"
-                    android:layout_height="50dp" />
+    android:id="@+id/dlv_loading1"
+    app:animDuration="2000"
+    app:animInterpolator="AccelerateDecelerateInterpolator"
+    app:firstSideDiceNumber="1"
+    app:firstSideDicePointColor="@color/colorPrimary"
+    app:firstSideDiceBgColor="@android:color/white"
+    app:firstSideDiceBorderColor="@color/colorPrimary"
+    app:secondSideDiceNumber="2"
+    app:secondSideDicePointColor="@android:color/holo_orange_dark"
+    app:secondSideDiceBgColor="@android:color/white"
+    app:secondSideDiceBorderColor="@android:color/holo_orange_dark"
+    app:thirdSideDiceNumber="3"
+    app:thirdSideDicePointColor="@android:color/holo_red_dark"
+    app:thirdSideDiceBgColor="@android:color/white"
+    app:thirdSideDiceBorderColor="@android:color/holo_red_dark"
+    app:fourthSideDiceNumber="4"
+    app:fourthSideDiceBgColor="@android:color/white"
+    app:fourthSideDiceBorderColor="@android:color/holo_green_dark"
+    app:fourthSideDicePointColor="@android:color/holo_green_dark"
+    android:layout_width="50dp"
+    android:layout_height="50dp" />
 
 ```
 
